@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: #F7EFCF;
+    padding: 2rem;
 
 }
 
@@ -27,6 +28,7 @@
 
 .nav {
     display: flex;
+    flex-direction: column;
 
 }
 
@@ -65,6 +67,11 @@
 
 @media(min-width:768px) {
 
+    .nav {
+
+        flex-direction: row;
+
+    }
 
     .logo-header {
         width: 100px;
@@ -101,28 +108,40 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
-.top-container h4 {
+
+.top-container h3 {
     font-family: 'Courier New', Courier, monospace;
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
 }
 
 .top-container h1 {
     margin-top: 50px;
-    margin-left: 5px;
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
+    margin: 2rem 3rem;
+
 }
+
+
 
 .top-container p {
     font-size: 20px;
     text-align: center;
-    margin-top: 40px;
+    margin: 0rem 3rem;
 }
 
 @media(min-width:768px) {
+    .top-container h1 {
+
+        font-size: 50px;
+
+
+    }
+
     .top-container {
 
         flex-direction: row;
