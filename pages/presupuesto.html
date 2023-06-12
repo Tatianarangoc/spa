@@ -51,7 +51,8 @@
                         </div>
                         <div class="form telefono">
                             <label class="formulario-label" for="number">Teléfono<span class="ast">*</span></label>
-                            <input class="formulario-input" type="tel" id="number" name="user_number" required>
+                            <input class="formulario-input" type="tel" id="number" name="user_number" required
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                         </div>
                         <div class="form mensaje">
                             <label class="formulario-label  " for="msg">Mensaje<span class="ast">*</span></label>
@@ -67,6 +68,7 @@
                         </div>
                         <p class="text"></p>
                         <p class="msgAlert"></p>
+                        <p></p>
                     </div>
                 </div>
             </form>
@@ -74,7 +76,7 @@
     </main>
     <footer class="footer">
 
-        <a href="index.html"><img class=" footer-logo" src="./images/spa.png" alt="logo-header">
+        <a href="index.html"><img class=" footer-logo" src="../images/spa.png" alt="logo-header">
         </a>
         <div class="footer-text">
             <p>Copyright. Todos los derechos reservados.</p>
@@ -111,7 +113,7 @@
                 </svg></a>
             <a href=""></a>
         </div>
-
+        <script src="/scripts/script.js"></script>
     </footer>
     <script src="../scripts/script.js"></script>
 </body>
